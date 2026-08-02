@@ -1,8 +1,7 @@
 # AI Game Projects
-
 A scalable collection of Python-based game development and artificial intelligence projects. This repository is continuously updated with new games, AI algorithms, and interactive simulations.
-
 ## About This Repository
+
 This repository includes game development and AI-focused projects built using Python. It is designed as a learning and experimentation space for implementing classic and advanced AI algorithms in games.
 
 The projects demonstrate concepts such as:
@@ -38,15 +37,39 @@ An AI opponent for Rock-Paper-Scissors that learns the player's habits over time
 * AI Strength: Improves over time against players with real patterns; converges to ~33% win rate against fully random play
 * Concepts: Sequence/pattern learning, adaptive decision making, simple state tracking
 
+### 5. Dijkstra Pathfinding Visualization
+Visualization of Dijkstra's algorithm finding the shortest path in a grid, with walls placed interactively and the search animated cell by cell.
+* Algorithm: Dijkstra's Shortest Path
+* Concepts: Priority queues, graph traversal, shortest-path search
+
+### 6. Snake Game with AI
+A classic Snake game where an AI autopilot uses Breadth-First Search to route the snake to the food while avoiding its own body, falling back to a flood-fill safety check when no path exists.
+* Algorithm: BFS pathfinding with flood-fill fallback
+* Concepts: Grid search, self-avoidance, real-time replanning
+
+### 7. Racing Game with AI Opponent
+A top-down racing game where an AI-controlled car races the player around an oval track by steering toward waypoints and adjusting speed through turns.
+* Algorithm: Waypoint-following steering with turn-based speed control
+* Concepts: Vector math, steering behaviors, lap/race state tracking
+
+### 8. Tower Defense Game AI
+A tower defense game where enemies use BFS to pathfind through a maze to the base, automatically rerouting when towers block their path, while towers auto-target the nearest enemy in range.
+* Algorithm: BFS pathfinding (enemies) + nearest-target selection (towers)
+* Concepts: Dynamic replanning, wave spawning, real-time targeting
+
+### 9. Reinforcement Learning Game Agent
+A tabular Q-learning agent that learns to navigate a grid world from start to goal while avoiding traps, purely through trial-and-error reward signals with no hardcoded path.
+* Algorithm: Q-Learning (tabular, epsilon-greedy exploration)
+* Concepts: Reward shaping, exploration vs. exploitation, learned policies
+
+### 10. 3D Game Simulation (basic)
+A minimal 3D engine built from scratch (no 3D library) that renders wireframe cubes with perspective projection and a flyable first-person camera.
+* Algorithm: Manual 3D-to-2D perspective projection and camera-space transforms
+* Concepts: 3D vector math, rotation matrices, projection, first-person camera control
+
 ## Upcoming Projects
 This section will grow as new projects are added:
-* Dijkstra Pathfinding Visualization
-* Snake Game with AI
-* Racing Game with AI Opponent
-* Tower Defense Game AI
-* Reinforcement Learning Game Agent
-* 3D Game Simulation (basic)
-
+* More additions coming soon
 ## Technologies Used
 * Python
 * Pygame
@@ -56,30 +79,25 @@ This section will grow as new projects are added:
 
 ## Installation
 Clone the repository:
-```bash id="c1m8ra"
+```
 git clone https://github.com/maharukhh/game-ai-projects.git
 cd game-ai-projects
 ```
-Install dependencies:
-```bash id="n9k2sd"
-pip install -r requirements.txt
-```
-
-## Running a Project
-Each project can be run independently:
-```bash id="p4x8lm"
-cd project-folder
-python main.py
-```
 
 ## Project Structure
-```text id="q8m1zn"
+```
 game-ai-projects/
 │
 ├── tic-tac-toe-ai/
 ├── rectangle-game/
 ├── pathfinding-astar/
 ├── Rock-Paper-Scissors AI that learns opponent patterns/
+├── Dijkstra Pathfinding Visualization/
+├── Snake Game with AI/
+├── Racing Game with AI Opponent/
+├── Tower Defense Game AI/
+├── Reinforcement Learning Game Agent/
+├── 3D Game Simulation (basic)/
 ├── upcoming-projects/
 ├── requirements.txt
 └── README.md
@@ -99,6 +117,11 @@ Each project typically includes:
 * Heuristic Search
 * State Management
 * Markov-chain Pattern Prediction
+* Dijkstra's Shortest Path
+* BFS Pathfinding
+* Steering Behaviors
+* Q-Learning (Reinforcement Learning)
+* 3D Projection & Camera Transforms
 
 ## Learning Outcomes
 This repository helps in understanding:
@@ -113,14 +136,12 @@ This repository helps in understanding:
 Future development direction:
 * Add more AI-based games
 * Improve graphics and animations
-* Add reinforcement learning agents
+* Expand reinforcement learning agents to more complex environments
 * Implement multiplayer support
 * Expand algorithm visualizations
 
 ## Author
-
 Mahrukh
-
 Robotics & Intelligent Systems Student passionate about Artificial Intelligence, Game Development, and intelligent systems.
 ---
 This repository will continue to evolve as more AI and game development projects are added.
