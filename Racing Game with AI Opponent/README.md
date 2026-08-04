@@ -10,10 +10,6 @@ A top-down racing game where you compete against an AI-controlled car around an 
 4. **Player physics** — You accelerate, brake, and steer with simple friction-based physics — steering only takes effect above a minimum speed, like a real car.
 5. **Race logic** — Both cars track which waypoint they're heading to and how many full laps they've completed; first to the lap target wins.
 
-## Files
-
-- `racing_game_ai.py` — the full game: track/waypoint generation, player physics, AI steering logic, and the Pygame race loop.
-
 ## Requirements
 
 - Python 3.x
